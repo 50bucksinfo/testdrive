@@ -1,0 +1,393 @@
+/* --- MAIN --- */
+/* Background and site font */
+body {
+	background:#000 url(bg.jpg) repeat-x;
+}
+
+/* Content background */
+#container {
+	background: none;
+}
+
+/* Main copy font */
+.contentCopy {
+	font:12px Verdana,Arial, Helvetica, sans-serif;
+        color: #fff;
+        line-height:1.4em;
+}
+
+/* Copy links */
+.contentCopy a {
+	color:#faaf2d;
+	text-decoration:underline;
+}
+
+/* Copy links hover state */
+.contentCopy a:hover {
+	color:#1b67e4;
+	text-decoration:none;
+}
+
+h1{
+font-size: 18px
+color: #e87e1a;
+}
+
+h2{
+font-size: 17px;
+color: #e87e1a;
+margin-bottom: 10px;
+}
+
+h3{
+font-size: 14px;
+color: #e87e1a;
+}
+
+h4{
+font-size: 14px;
+color: #e87e1a;
+}
+
+.hboxtop{
+background: url(hboxtopbg.jpg);
+}
+.hboxbot{
+height: 190px;
+background: url(logbg.png);
+}
+
+/* --- ABSOLUTE DIVS --- */
+/* Use for overlaying graphics, etc */
+#absoDiv1 {
+	width:0;
+	height:0;
+	background:url(style.css);
+}
+
+#absoDiv2 {
+	width:0;
+	height:0;
+	background:url(style.css);
+}
+
+#absoDiv3 {
+	width:0;
+	height:0;
+	background:url(style.css);
+}
+
+
+
+
+/* --- MENU --- */
+/* Top Menu font styling */
+#topMenu, #topMenu * {
+	font:12px Arial, Helvetica, sans-serif;
+}
+
+/* Top Menu height */
+#topMenu {
+	/* Deduct any top padding from the required menu height */
+	height:32px;
+	padding-top:1px;
+}
+
+/* Top Menu with Submenu height */
+.topMenuSub {
+	/* Deduct any #topMenu top padding from the required menu height */
+	height:61px !important;
+}
+
+/* Set the spacing of the menu items */
+#topMenu * {
+	padding:0 20px;
+	margin:0 0px;
+
+}
+
+/* Menu item font color */
+#topMenu a {
+	color:#fff;
+	text-decoration:none;
+border-right: 1px solid #cc6212;
+border-left: 1px solid #f5962d;
+}
+
+/* Hovered menu item font and background color */
+#topMenu a:hover, #viewCartBtn:hover {
+	color:#fff;
+	background: url(menu2.jpg) repeat-x top center;
+}
+
+/* Current menu item font and background color */
+#topMenu .current, #topMenu .current a {
+	color:#13213c;
+	background: url(menu3.jpg) repeat-x top center;
+}
+
+/* Change _cartView.gif to _cartViewBlack.gif for dark layouts */
+#viewCart {
+	background-image:url(_cartViewBlack.gif);
+}
+#viewCartBtn {
+	background-image:url(_cartViewBlack.gif);
+	color:#fff;
+}
+
+
+
+
+/* --- SUBMENU --- */
+/* Set the margin between the menu and submenu items */
+#subMenu, #subMenu * {
+	font:11px Arial, Helvetica, sans-serif;
+}
+
+/* Set the margin between the menu and submenu items */
+#subMenu {
+	margin-top:-7px;
+}
+
+/* Set the spacing of the submenu items */
+#subMenu * {
+	padding:0 10px;
+	margin:0 5px;
+}
+
+/* Submenu item font color */
+#subMenu a {
+	color:#fff;
+border:none;
+}
+
+/* Hovered submenu item font and background color */
+#subMenu a:hover {
+	color:#fff;
+	background:#e07618;
+}
+
+/* Current submenu item font and background color */
+#subMenu .current {
+	color:#000;
+	background:#e07618;
+}
+
+
+
+
+/* --- CONTENT IMAGES --- */
+/* Content image alignment (Set to 0 for left align) */
+.contentImgInner {
+	margin:auto;
+}
+
+/* Content image's font size */
+.contentImg .item .text {
+	font-size:11px;
+}
+
+
+
+
+/* --- SIDEBAR --- */
+/* Comment out both lines to remove sidebar background */
+#sidebar {
+	background:#1d1d1e;
+	margin-top:20px !important;
+}
+
+#sidebar.content {
+	background: url(logbg.png);
+border-right: solid 1px #3a3c3e;
+border-bottom: solid 1px #3a3c3e;
+border-left: solid 1px #000;
+border-top: solid 1px #000;
+}
+
+/* Uncomment following line to hide the home/contact sidebar */
+#sidebar{display:none!important}#sidebar.content{display:inline!important}.siteContent{width:950px!important}.contentCopy{width:950px!important}
+
+/* The sidebar's page title font */
+#sidebar #pageTitle {
+	font:bold 14px Arial, Helvetica, sans-serif;
+display: none;
+}
+
+/* Sidebar image's font size */
+#sidebar .item .text {
+	font-size:11px;
+}
+
+
+
+
+/* --- FOOTER --- */
+/* Footer style and font */
+#footer {
+	background: url(footerbg.png) no-repeat top center;
+	color:#fff;
+	font-size:11px;
+}
+
+/* Footer links font color */
+#footer a {
+	color:#fff;
+}
+
+/* Footer links  font and background color */
+#footer a:hover {
+	color:#fff;
+	background:#66676a;
+}
+
+
+
+
+/* ---------------------------------- */
+
+/* ADVANCED EDITING */
+body {font:12px Arial, Helvetica, sans-serif}
+#container {position:relative; z-index:2; width:950px; margin:0 auto/*; overflow:hidden*/}
+#topMenu {background:url(menu.png) top repeat-x; width:932px; *margin-top:-3px; /*padding:7px 0 0 18px;*/ padding-left:18px; overflow:hidden}
+#topMenu * {padding-top:8px; padding-bottom:8px; /*margin-top:0;*/ margin-bottom:0px}
+#topMenu a {display:block; float:left;}
+#topMenu .current, #subMenu .current {float:left}
+#topMenu .current a {margin:0; padding:0; background: none; border: none;}
+#topMenu .current a:hover {text-decoration:underline}
+#viewCart {float:right; background-repeat:no-repeat; background-position:0 -42px; height:16px; overflow:hidden}
+#viewCartBtn {display:block; width:82px; text-align:right; height:21px; cursor:pointer; border:none; background-color:transparent; background-repeat:no-repeat; background-position:3px 0; vertical-align:text-top; margin:-3px -3px 0 1px; padding:2px 4px}
+#viewCartBtn:hover {background-position:3px -21px}
+#viewCartBtn::-moz-focus-inner {/* FF fix */ border:0; padding:0}
+#subMenu {padding:0}
+#subMenu * {padding-top:0; padding-bottom:0; margin-top:0; margin-bottom:20px; *margin-top:-9px}
+#siteContent {display:inline; float:left; margin:10px 0 10px 0px; width:930px; padding:10px}
+#siteContent .contentCopy {width:505px}
+#siteContent.content {float:right; margin: 20px 35px 35px 0; width:655px !important}
+#siteContent.content .contentCopy {width:655px !important}
+.contentImg {margin:30px 0; width:505px}
+.contentImg.content {width:655px}
+.contentImgInner {display:table}
+.contentImg .item {float:left; margin:0 6px; width:150px}
+.contentImg .item table {display:block; float:left}
+.contentImg .item .overlayImg {display:block}
+.contentImg .item .text {margin:8px 2px 0; width:146px}
+.contentImg.vert {margin-bottom:15px}
+.contentImg.vert .contentImgInner {margin-left:4px}
+.contentImg.vert .item {/*clear:both;*/ width:635px; margin-bottom:15px}
+.contentImg.vert .item table {margin:4px 0 0 10px}
+.contentImg.vert .item .overlayImg {float:left}
+.contentImg.vert .item .text {width:295px; float:left}
+.contentImg.vert .item .text.noShop {width:471px}
+.contentImg.vert .item .shop {float:right; margin-top:10px}
+#sidebar {display:inline; width:300px; padding:0 10px 10px; margin-top:25px; margin-left:35px; margin-right:35px; margin-bottom:35px; float:right}
+#sidebarPageTitle {font-size:14px; font-weight:bold; margin:10px 0 10px}
+#sidebar.content {width:148px; float:left}
+#sidebar #pageTitle {margin:10px auto 0; width:100%; text-align:center}
+#sidebar .item {margin:10px 0 0}
+#sidebar .item img {display:block; margin:0 auto}
+#sidebar .item .text {margin:3px 3px 10px; width:300px}
+#sidebar.content .item .text {width:144px}
+#sidebar .item .shop {margin-bottom:25px}
+
+.item .shop {display:block; margin:10px auto 0; width:146px; font-size:11px; line-height:1.4em}
+.item .shop select {width:144px; border:1px solid #c1c1c1; font-size:10px; display:block; margin:5px 0; padding:1px}
+.item .shop .addCart {float:right; cursor:pointer; display:block; margin:4px 2px 0 0}
+.item .shop .outOfStock {float:right; margin:4px 3px 0 0; color:#900; font-size:10px}
+.price {float:left; display:block; font-weight:bold; font-size:13px; margin-top:4px}
+#footer {display:inline-block; padding:30px 45px 0; height:100px; width:860px}
+#footer a {text-decoration:none; padding:1px 3px; white-space:nowrap; margin-bottom:2px; line-height:1.8em}
+#footerLeft {float:left; width:500px}
+#footerRight {float:right; width:300px}
+#footerRight * {font-size:9px; float:right}
+#footerRight a {float:none; padding:1px}
+#footerRight #credHavealook {clear:both; margin-top:3px; width:300px; text-align:right}
+
+.cartQuantity {border:1px solid #c1c1c1; float:left; text-align:center; font-size:9px; margin-top:2px}
+.cartUpdate {float:left; padding-left:10px; padding-top:3px; cursor:pointer}
+p {margin:0px;}table {border-collapse:collapse;}
+p {margin:0px;}table {border-collapse:collapse;}
+
+
+
+/* ------------------------- */
+/* ----- Enquiry Forms ----- */
+/* ------------------------- */
+
+/*---Border and BG Colour of Form---*/
+.enquiry{
+background: url(Enq-Bg.png) repeat;
+border: 1px solid #222;
+width: 400px;
+padding: 20px;
+margin: 0 auto;
+}
+
+.enquiryLeft{
+font: 12px Verdana, Arial, Helvetica, sans-serif;
+color: #666;
+padding: 5px 20px;
+vertical-align: top;
+
+}
+
+.enquiryRight{
+padding-right: 20px;}
+
+.enquirySend{
+padding-bottom: 20px;
+padding-right: 20px;
+text-align:right;
+}
+
+
+/*---BG and Text Colour of Header---*/
+.enquiryHeader{
+background: #f48b1d url(http://www.affordablefitness.com.au/Enq-Header-BG.jpeg) repeat-x bottom center;
+font: 18px 'Century Gothic', Verdana,Arial, Helvetica, sans-serif;
+color: #fff;
+padding: 5px;
+border: 1px solid #f79e1e;
+}
+
+/*---Change Space size under header Min 24px---*/
+.espacing{
+height: 24px;
+}
+
+/*---Add a Border And Color to the text fields---*/
+/*Uncomment to Use*/
+.enquiry input {
+/*background-color: #666699;*/
+border: 1px solid #999;
+width: 320px;
+}
+
+.enquiry select {
+/*background-color: #666699;*/
+border: 1px solid #999;
+}
+
+/*---Add a Border And Color to the text area---*/
+/*Uncomment to Use*/
+.enquiry textarea {
+/*background-color: #666699;
+color: #ffffff;*/
+border: 1px solid #999;
+width:320px;
+height:120px;
+text-align:left;
+}
+
+.enquiry .button { 
+background: #f48b1d url(Send-BG.jpg);
+border: 1px solid #f78f1e;
+width: 200px;
+color: #fff;
+}
+
+/*---Give every second row and different colour---*/
+/*.enquiryrow{
+background: #dedede;
+}*/
+
