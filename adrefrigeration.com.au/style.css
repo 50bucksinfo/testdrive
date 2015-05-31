@@ -1,0 +1,477 @@
+/* EDITABLE PARTS */
+
+body {	    
+/* Designsite background */
+	   background: #fff url(bg.jpg) top center no-repeat scroll;
+}
+
+#container {
+	/* Designsite content background */
+	   background: #fff /*url(thumbnailLarge/bgCont.jpg) no-repeat bottom right*/;
+	   
+	/* Standard content font */
+	   font: 12px Verdana,Arial, Helvetica, sans-serif;
+	   color: #222222;
+	   
+	   padding-left:15px; padding-right:15px;
+	   position:relative;
+	   height:100%;
+}
+
+/* Standard hyperlink font-style */
+	.content a, .content a:visited {color: #56b; text-decoration: underline;}
+	.content a:hover {color: #8ad ; text-decoration: underline;}
+
+.banner {
+	/* The border that sits below the banner (delete line to remove) */
+	   /*border-bottom: solid 3px #b5b5b5;*/
+}
+
+/* Comment following 2 lines to make banner fit into the side padding of the site (950px) */
+#container { padding-left: 0px; padding-right: 0px; }
+#containerTable { margin-left: 15px; }
+
+
+/* --- ABSOLUTE DIVS --- */
+/* Use for overlaying graphics, etc */
+#absoDiv1 {
+	width:0;
+	height:0;
+	background:url(style.css);
+}
+
+#absoDiv2 {
+	width:0;
+	height:0;
+	background:url(style.css);
+}
+
+#absoDiv3 {
+	width:0;
+	height:0;
+	background:url(style.css);
+}
+
+
+#sideTable {
+	/* The color of the sidebar */
+	   background: #f7f7f7;
+}
+
+.menu a { /* Menu items */
+	float:left;
+	cursor: pointer;
+	padding: 7px;
+	width: 161px;
+	margin-bottom: 1px;
+	
+	font-size: 11px;
+	text-decoration: none;
+	font-weight: bold;
+        background: url(menu1.png) right no-repeat;
+
+	color: #fff;
+}
+
+.menu a:hover { /* Menu item (when mouse is rolled over) */
+	text-decoration: none;
+	background: url(menu2.png) right no-repeat;
+	color: #fff;
+}
+
+.menuCurrent a { /* Menu item (the current page) */
+	text-decoration: none;
+	background: url(menu1.png) right no-repeat;
+	color: #fff;
+}
+
+.parentMenu a { /* Menu item (the current page) */
+	padding-right: 16px;
+	padding-left: 3px;
+	text-decoration: none;
+	
+	background: # url(menu1.png) right no-repeat;
+	color: #fff;
+}
+
+.menu .sub a { /* Menu items */
+	float:left;
+	cursor: pointer;
+	padding: 1px 7px 1px 13px;
+	width: 139px;
+	
+	font-size: 11px;
+	text-decoration: none;
+	font-weight: bold;
+	
+	background: url(subicon.png) no-repeat left 5px;
+	border-left: none;
+	margin-left:16px;
+	color: #777;
+}
+
+.menu .sub a:hover, .menu .subCurrent a:hover { /* Menu item (when mouse is rolled over) */
+	background: url(subicon.png) no-repeat left 5px;
+	color: #000;
+}
+
+.menu .subCurrent a { /* Menu items */
+	float:left;
+	cursor: pointer;
+	padding: 1px 7px 1px 13px;
+	width: 139px;
+	
+	font-size: 11px;
+	text-decoration: none;
+	font-weight: bold;
+	
+	background: url(subicon.png) no-repeat left 5px;
+	border-left: none;
+	margin-left:16px;
+	color: #000;
+}
+
+
+
+
+/* Standard hyperlink for sideLogo text */
+	.sideText a, .sideText a:visited {color: #56b; text-decoration: underline; }
+	.sideText a:hover {color: #8ad; text-decoration: underline; }
+
+.sideLogo .sideText {
+	/* The text to go with sideLogo image */
+	   font: 12px Arial, Helvetica, sans-serif;
+	   /*color: #000;*/
+}
+
+.imageHolderDiv {text-align:center}
+.imageHolderTable {margin:auto}
+/* Uncomment next two lines to make images sit left aligned */
+/*.imageHolderDiv {text-align:left}
+.imageHolderTable {margin:0}*/
+
+.imageBox {
+	/* Uncomment to give the content images a box and border */
+		/*padding: 5px;
+		background: #ddd;
+		border: 1px solid #aaa;*/
+}
+
+.imageBox .imageText {
+	/* The text to go with content images */
+	   font-family: Arial, Helvetica, sans-serif;
+	   font-size: 12px;
+	   text-align: left;
+}
+
+#footer {
+	width: 980px;
+	/* Uncomment to give the footer color */
+	/*background: #1286b8;
+	padding: 0px 10px 10px;
+	width: 960px;*/
+}
+
+/*----------------------------------------------*/
+/*----------------------------------------------*/
+/*----------------------------------------------*/
+/*----------------------------------------------*/
+
+/* MAIN SITE SHELL */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	
+	font: 10px Arial, Helvetica, sans-serif;
+	color: #fff;
+}
+
+.Designsite { /* Holds ALL content of the Designsite */
+	width: 980px;
+	margin: auto;
+	padding-top: 0px;
+}
+
+#container { /* Main white section of site */
+	overflow: hidden;
+	padding-bottom:15px;
+}
+
+#sideTable {
+	width: 175px;
+	vertical-align:top;
+}
+
+#contentTable {
+	width: 775px;
+	vertical-align:top;
+	padding-bottom:20px;
+}
+
+#containerTable {
+	height: 450px;
+}
+
+/*----------------------------------------------*/
+
+/* BANNER */
+
+.banner { /* Main banner for site */
+	/*display: block;*/
+	/*text-align: center;*/
+}
+
+.banner img {
+	/*height: auto;*/
+	/*visibility: hidden;*/
+}
+
+/*----------------------------------------------*/
+
+/* MENU */
+
+.menu { /* Entire Side Menu: Uncomment to hide entire menu */
+	/* visibility: hidden;
+	height: 0px; */
+}
+
+#aboveMenu { /* If anything needs to sit above the menubar */
+	/*height: 10px;
+	width: 175px;
+	margin-bottom: 1px;*/
+}
+
+#belowMenu { /* If anything needs to sit below the menubar */
+	height: 20px;
+	width: 175px;
+}
+
+/*----------------------------------------------*/
+
+/* SIDEBAR ITEMS */
+
+.viewCart { /* View Cart button */
+	margin-left:22px;
+	/*margin-bottom: 10px;*/
+	margin-top:15px;
+	width: 123px;
+	height: 32px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.sideLogo { /* Embedded sideLogo container */
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left: 5px;
+	clear:both;
+	display:inline-block;
+	width:150px;
+}
+
+.sideLogo img { /* Embedded sideLogo image / photo */
+	padding-left:7px;
+	display: block;
+	margin:auto;
+}
+
+.sideLogo .sideText { /* Embedded sideLogo text */
+	text-align:center;
+	margin-top:3px;
+	margin-left:8px;
+	margin-right:17px;
+}
+
+/*----------------------------------------------*/
+
+/* CONTENT */
+
+.content { /* Page text content */
+	clear: both;
+	width: 750px;
+	padding-left: 15px;
+	margin-top: 16px;
+	margin-bottom: 15px;
+	line-height:1.5em;
+	overflow: hidden;
+}
+
+.content .contentTableInner { /* Force the table that holds text content to fit the div */
+	width: 750px;
+}
+
+hr  { /* The standard hr-line styling */
+	border: 0;
+	height: 1px;
+	color: #c1c1c1;
+	background-color: #c1c1c1;
+	width: 80%;
+}
+
+/* CONTENT: EMBEDDED ITEMS / IMAGES / PHOTOS */
+
+.imageBox {
+	float: left;
+	margin: 5px;
+	overflow: hidden;
+}
+
+.imageBox img {clear:both}
+
+.imageBox .imageText {
+	float: left;
+	margin-left: 10px;
+}
+
+/* Home-specific sizes */
+.imageBoxHome {	width: 180px }
+.imageBoxHome .imageText { width: 160px }
+
+/* Content-specific sizes */
+.imageBoxContent { width: 150px }
+.imageBoxContent .imageText { width: 130px }
+
+/*----------------------------------------------*/
+
+/* CONTENT: EMBEDDED SHOP-STYLE (VERTICAL) */
+
+.imageBoxVert {
+	float: left;
+	margin: 5px;
+	overflow: hidden;
+	width: 750px;
+	padding-bottom: 10px;
+}
+
+.imageBoxVert .imageHolder { float: left; width: 150px; text-align: center }
+.imageBoxVert img { margin: auto }
+.imageBoxVert .imageText { float: left; text-align: left; width: 430px; padding:0 6px }
+.imageBoxVert .imageShop .dropdown { width: 130px;  }
+
+
+/*----------------------------------------------*/
+
+/* CART ITEMS (CONTENT & SIDEBAR) */
+
+.imageShop {
+	float: left;
+	text-align: left;
+	padding-top: 3px;
+	margin-left: 10px;
+	font-size: 10px;
+}
+
+.imageShop .itemNameLabel { font-weight: bold }
+.imageShop .itemPriceLabel { font-weight: bold }
+.imageShop .itemUnavailable { font-size: 11px; color: #FF0000 }
+.imageShop .addCart { padding-top: 5px }
+.dropdownDiv { padding:2px 0 }
+.dropdown {border:1px solid #c1c1c1; font-size:9px }
+
+.imageBoxContent .imageShop { width: 150px; text-align: left }
+.imageBoxContent .imageShop .dropdown { width: 130px }
+.imageSidebarContent .imageShop { width: 150px; margin: auto; text-align: center }
+.imageSidebarContent .imageShop .dropdown { width: 150px }
+
+.imageBoxHome .imageShop { width: 160px; text-align: left }
+.imageBoxHome .imageShop .dropdown {  width: 160px }
+.imageSidebarHome .imageShop { width: 300px; margin: auto; text-align: center }
+.imageSidebarHome .imageShop .dropdown {  width: 200px }
+
+/*----------------------------------------------*/
+
+/* SHOPPING CART PAGE */
+
+#shopTable {
+	border-color: #ededed;
+    border-width: 1px 1px 0 0;
+    border-style: solid;
+	font-size: 11px;
+}
+
+#shopTable td {
+	border-color: #ededed;
+	border-width: 0 0 1px 1px;
+    border-style: solid;
+    margin: 0;
+    padding: 3px;
+}
+
+#shopTable form { margin: 0; padding: 0 }
+#shopTableHeader { background: #ededed }
+.shopTableFooter { background: #ededed }
+
+#shopExtraInfo {
+	font-weight: bold;
+	color: #cc0000;
+	border-bottom:1px solid #c1c1c1;
+	margin-bottom:5px;
+}
+
+/* Uncomment to hide the Extra Info Text */
+	/*#shopExtraInfo div {display: none }*/
+
+/*----------------------------------------------*/
+
+/* FOOTER / CREDITS / BOTTOM MENU */
+
+#footer { /* Footer shell */
+	margin-bottom: 5px;
+	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #fff;
+}
+
+#footer a { /* All footer hyperlinks */
+	color: #fff;
+	text-decoration: none;
+}
+
+#footer a:hover { /* All footer hyperlinks (mouseover) */
+	text-decoration: underline;
+}
+
+.footerMenu { /* Footer menu section */
+	float: left;
+	vertical-align: top;
+	padding-top: 7px;
+	width: 700px;
+}
+
+.footerMenu a { /* Footer menu items */
+	padding-left: 4px;
+	padding-right: 4px;
+	line-height: 16px;
+	display: inline-block;
+}
+
+.footerCredits { /* Footer credit information */
+	float: right;
+	vertical-align: top;
+	text-align: right;
+	padding-top: 7px;
+}
+
+#copyrightInfo { /* Copyright text. Remove visibility comments below to hide text */
+	clear: both;
+	padding-top: 6px;
+	padding-left: 4px;
+	/*visibility:hidden;*/
+}
+
+#havealookCredits { /* 'Designsite By' text. Remove visibility comments below to hide text */
+	padding-top: 2px;
+	/*visibility:hidden;
+	position: absolute;*/
+}
+
+img {border:0}
+.clear{clear:both}.absolute{position:absolute}
+
+/* FANCYBOX */
+div#fancy_overlay {position:fixed; top:0; left:0; width:100%; height:100%; background-color:#000; display:none; z-index:30}* html div#fancy_overlay {position:absolute; height:expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px')}div#fancy_wrap {text-align:left}div#fancy_loading {position:absolute; height:40px; width:40px; cursor:pointer; display:none; overflow:hidden; background:transparent; z-index:100}div#fancy_loading div {position:absolute; top:0; left:0; width:40px; height:480px; background:transparent url('fancy_progress.png') no-repeat}div#fancy_loading_overlay {position:absolute; background-color:#FFF; z-index:30}div#fancy_loading_icon {position:absolute; background:url('http://adrefrigeration.com.au/fancy_loading.gif') no-repeat; z-index:35; width:16px; height:16px}div#fancy_outer {position:absolute;top:0;left:0;z-index:90;padding:18px 18px 33px 18px;margin:0;overflow:hidden;background:transparent;display:none}div#fancy_inner {position:relative; width:100%; height:100%; border:1px solid #BBB; background:#FFF}div#fancy_content {margin:0; z-index:100; position:absolute}div#fancy_div {background:#000; color:#FFF; height:100%; width:100%; z-index:100}img#fancy_img {position:absolute; top:0; left:0; border:0;padding:0;margin:0; z-index:100; width:100%; height:100%}div#fancy_close {position:absolute; top:-12px; right:-15px; height:30px; width:30px; background:url('fancy_closebox.png') top left no-repeat; cursor:pointer; z-index:181; display:none}#fancy_frame {position:relative;width:100%;height:100%;display:none}#fancy_ajax {width:100%;height:100%;overflow:auto}a#fancy_left, a#fancy_right {position:absolute;bottom:0px;height:100%;width:35%;cursor:pointer;z-index:111;display:none;background-image:url(data:image/gif;base64,AAAA);outline:none}a#fancy_left {left:0px}a#fancy_right {right:0px}span.fancy_ico {position:absolute;top:50%;margin-top:-15px;width:30px;height:30px;z-index:112;cursor:pointer;display:block}span#fancy_left_ico {left:-9999px;background:transparent url('fancy_left.png') no-repeat}span#fancy_right_ico {right:-9999px;background:transparent url('fancy_right.png') no-repeat}a#fancy_left:hover {visibility:visible}a#fancy_right:hover {visibility:visible}a#fancy_left:hover span {left:20px}a#fancy_right:hover span {right:20px}.fancy_bigIframe {position:absolute;top:0;left:0;width:100%;height:100%;background:transparent}div#fancy_bg {position:absolute;top:0; left:0;width:100%;height:100%;z-index:70;border:0;padding:0;margin:0}div.fancy_bg {position:absolute;display:block;z-index:70;border:0;padding:0;margin:0}div.fancy_bg_n {top:-18px;width:100%;height:18px}div.fancy_bg_ne {top:-18px;right:-13px;width:13px;height:18px}div.fancy_bg_e {right:-13px;height:100%;width:13px}div.fancy_bg_se {bottom:-18px;right:-13px;width:13px;height:18px}div.fancy_bg_s {bottom:-18px;width:100%;height:18px}div.fancy_bg_sw {bottom:-18px;left:-13px;width:13px;height:18px}div.fancy_bg_w {left:-13px;height:100%;width:13px}div.fancy_bg_nw {top:-18px;left:-13px;width:13px;height:18px}div#fancy_title {position:absolute;bottom:-33px;left:0;width:100%;z-index:100;display:none}div#fancy_title div {color:#FFF;font:bold 12px Arial;padding-bottom:3px}div#fancy_title table {margin:0 auto}div#fancy_title table td {padding:0;vertical-align:middle}td#fancy_title_left {height:32px;width:15px;background:transparent url(fancy_title_left.png) repeat-x}td#fancy_title_main {height:32px;background:transparent url(fancy_title_main.png) repeat-x}td#fancy_title_right {height:32px;width:15px;background:transparent url(fancy_title_right.png) repeat-x}
+p {margin:0px;}table {border-collapse:collapse;}
+p {margin:0px;}table {border-collapse:collapse;}
