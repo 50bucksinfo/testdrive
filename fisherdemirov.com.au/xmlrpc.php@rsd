@@ -2,12 +2,12 @@
   <service>
     <engineName>WordPress</engineName>
     <engineLink>http://wordpress.org/</engineLink>
-    <homePageLink>http://fisherdemirov.50bucks.info</homePageLink>
+    <homePageLink>http://fisherdemirov.com.au</homePageLink>
     <apis>
-      <api name="WordPress" blogID="1" preferred="true" apiLink="http://fisherdemirov.50bucks.info/xmlrpc.php" />
-      <api name="Movable Type" blogID="1" preferred="false" apiLink="http://fisherdemirov.50bucks.info/xmlrpc.php" />
-      <api name="MetaWeblog" blogID="1" preferred="false" apiLink="http://fisherdemirov.50bucks.info/xmlrpc.php" />
-      <api name="Blogger" blogID="1" preferred="false" apiLink="http://fisherdemirov.50bucks.info/xmlrpc.php" />
+      <api name="WordPress" blogID="1" preferred="true" apiLink="http://fisherdemirov.com.au/xmlrpc.php" />
+      <api name="Movable Type" blogID="1" preferred="false" apiLink="http://fisherdemirov.com.au/xmlrpc.php" />
+      <api name="MetaWeblog" blogID="1" preferred="false" apiLink="http://fisherdemirov.com.au/xmlrpc.php" />
+      <api name="Blogger" blogID="1" preferred="false" apiLink="http://fisherdemirov.com.au/xmlrpc.php" />
           </apis>
   </service>
 </rsd>
