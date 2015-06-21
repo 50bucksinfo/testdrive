@@ -1,0 +1,170 @@
+/*
+Theme Name: Fisher Demirov
+Theme URI: http://www.duncanhodgekiss.com
+Description: Sticky WordPress theme
+Version: 1
+Author: Fisher Demirov Osteopaths
+Author URI: http://www.duncanhodgekiss.com
+*/
+
+@charset "UTF-8";
+/* CSS Document */
+
+/* ******************************************
+	Web Fonts
+****************************************** */
+
+/* @font-face {
+    font-family: "FuturaBT-Book";
+    src: url("http://folio.jady.org/fonts/futuran-webfont.eot");
+    src: url("http://folio.jady.org/fonts/futuran-webfont.eot?#iefix") format("embedded-opentype"),
+         url("http://folio.jady.org/fonts/futuran-webfont.woff") format("woff"),
+         url("http://folio.jady.org/fonts/futuran-webfont.ttf") format("truetype"),
+         url("http://folio.jady.org/fonts/futuran-webfont.svg#FuturaBT-Book") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+ @font-face {
+    font-family: 'FuturaBT-Bold';
+    src: url('http://folio.jady.org/fonts/futurab-webfont.eot');
+    src: url('http://folio.jady.org/fonts/futurab-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://folio.jady.org/fonts/futurab-webfont.woff') format('woff'),
+         url('http://folio.jady.org/fonts/futurab-webfont.ttf') format('truetype'),
+         url('http://folio.jady.org/fonts/futurab-webfont.svg#FuturaBT-Bold') format('svg');
+    font-weight: bold;
+}*/
+
+strong {font-family: FuturaBT-Bold; font-family: 'Raleway', sans-serif;}
+
+img {display:block; border:0px;}
+
+body { margin: 0; padding: 0; background-color:#000000; min-width:1230px; width:expression(document.body.clientWidth > 1500? "1500px": "auto" );
+font-family: 'Raleway', sans-serif;}
+
+h1{ font-family: FuturaBT-Bold; text-align:left; font-weight: normal; font-style: normal; font-size:52px; text-transform: uppercase; line-height:0px;
+font-family: 'Raleway', sans-serif; font-weight:bold;}
+
+p{font-family: FuturaBT-Book; text-align:left; font-weight: normal; font-style: normal; font-size:14px;
+font-family: 'Raleway', sans-serif;}
+
+a{ color:#000000; text-decoration:none; border:0;}
+
+.body_copy{font-family: FuturaBT-Book; text-align:left; font-weight: normal; font-style: normal; font-size:14px;font-family: 'Raleway', sans-serif;}
+
+#global{ width:100%;  background-color:#FFF;   overflow-x: hidden;
+  overflow-y:hidden; }
+
+#wrapper {width:1230px; padding-bottom:20px; margin-left:auto; margin-right:auto; background-color:#FFF; overflow-x: hidden;
+  overflow-y:hidden; position:relative; background-image:url(images/skelton_image.png); background-repeat: no-repeat; background-position:bottom left; }
+
+#main_content {width:920px; float:right;}
+
+#logo_area { width:230px; height:233px; margin-bottom:50px; float:left; background-image:url(images/fd_logo.png); background-repeat:no-repeat; z-index:100;}
+
+#menu { width:960px; font-size:15px; float:right; margin-top:45px; font-family:Arial, Helvetica, sans-serif; text-transform:uppercase; letter-spacing:2px; text-align:right; /*font-family: FuturaBT-Book; font-weight: normal; font-style: normal;*/font-family: 'Raleway', sans-serif;}
+
+#menu ul { float: left; }
+
+#menu ul li { float: left; list-style:none;   }
+
+#menu ul li:first-child {border-left:1px solid #000000;}
+
+ul.test-list{margin:0px 0;}
+ul.test-list:after{content:"."; display:block; height:0; clear:both; visibility:hidden;}
+ul.test-list li{list-style-type:none;display:inline;padding:0;margin:0; }
+
+ul.test-list li a{  padding:0 0 0 0; margin: 0 3px 0 0; border-right:1px solid #000000; text-transform:uppercase; font-family: FuturaBT-Book; text-align:center; font-weight: normal; font-style: normal; font-size:14px; color:#000; display:block; float:center; text-decoration:none; border-bottom:0;
+font-family: 'Raleway', sans-serif;}
+
+ul.working-list li a{padding:0 0px 0 0;}
+
+ul.test-list li.last a{border:0;}
+
+
+
+ul.test-list li a:hover{font-weight:bold;color:#000; font-family: FuturaBT-Bold; font-family: 'Raleway', sans-serif;}
+
+#menu ul li:first-child {border-left:1px solid #000000;}
+
+#menu ul {margin:20px 0;}
+#menu ul:after{content:"."; display:block; height:0; clear:both; visibility:hidden;}
+#menu ul li{list-style-type:none;display:inline;padding:0;margin:0; }
+
+#menu ul li a{  padding:0 0 0 0; margin: 0 5px 0 0; border-right:1px solid #000000; text-transform:uppercase; font-family: FuturaBT-Book; text-align:center; font-weight: normal; font-style: normal; font-size:14px; color:#000; display:block; float:center; text-decoration:none; border-bottom:0; font-family: 'Raleway', sans-serif;}
+
+
+
+#menu ul li.last a{border:0;}
+
+
+
+#menu ul li a:hover{font-weight:bold;color:#000; font-family: FuturaBT-Bold; font-family: 'Raleway', sans-serif;}
+
+
+#2footer { width:1230px; height:50px; float:left; position: absolute; bottom:0px; left:0px; background-color:#000; font-size:12px; float:right; text-align:right; font-family: FuturaBT-Book; font-weight: normal; font-style: normal; color:#FFF; position:relative; 	margin:0 auto;
+ font-family: 'Raleway', sans-serif;}
+
+.wrap { position:relative; margin:0 auto; width:1230px;}
+
+#footer { width:100%; float:left; background-color:#000;}
+
+#footer ul { float: right; }
+
+#footer ul li { float: left; border-right: 1px solid black; list-style:none; padding: 0 1em; padding-top:7px; font-size:12px; text-align:right; font-family: FuturaBT-Book; font-weight: normal; font-style: normal; color:#FFF; font-family: 'Raleway', sans-serif;}
+
+#footer a { color:#FFF; text-decoration:none; border:0; }
+#footer  ul li a:hover  { color:#FFF; text-decoration:none; font-family: FuturaBT-Bold; text-align:center;  font-family: 'Raleway', sans-serif;}
+#footer strong {margin-right: 4px; letter-spacing:1px;}
+#skelton {float:left; position: absolute; margin-bottom:50px; z-index:1; bottom:10px; left:0px; background-color: #C6C;}
+
+#content { width:928px; float:right; margin-top:40px; text-align:right; margin-bottom:100px;}
+
+#content_about { width:928px; float:right; margin-top:80px; text-align:right;}
+
+#content_main { width:960px; float:right; margin-top:30px; text-align:right;}
+
+#home_left {float:left;}
+
+#home_rigth {float:right;}
+
+#about_img {float:left; width:954px;}
+
+#about_img img { width:920px;}
+
+#about_heading {float:left; width:322px; margin-top:31px;}
+
+#main_heading {float:left; width:840px; margin-left:40px;}
+#main_heading2 {float:left; width:840px; margin-top:20px;}
+
+#about_content {float:left; width:600px; margin-top:25px}
+
+#info_content_left {float:left; width:400px;}
+
+#info_content_right {float:left; width:400px; margin-left:40px;}
+
+#pra_img{ float:left; width:275px; display:block; margin-top:15px;}
+
+#pra_content{ float:left; margin-left:40px; width:500px; display:block}
+
+#acc { width:928px; float:left;}
+
+.get_in_touch {width:184px; text-align:center;}
+.info {width:90px; text-align:center;}
+.practioners {width:170px; text-align:center;}
+.servicing_you {width:180px; text-align:center;}
+.about {width:105px; text-align:center;}
+.home {width:98px; text-align:center;}
+
+.acc_trigger { margin: 0; font-family: FuturaBT-Bold; font-weight: normal; font-style: normal; font-size:40px; line-height:110%; padding-top:0.6em; padding-bottom:0.4em; color: #000; border-bottom: 1px solid #000; text-transform:uppercase; text-align:left; text-decoration:none;  font-family: 'Raleway', sans-serif;}
+
+.trigger { margin: 0; font-family: FuturaBT-Bold; font-weight: normal; font-style: normal; font-size:40px; line-height:110%; color: #666;text-transform:uppercase; text-align:left; text-decoration:none;  font-family: 'Raleway', sans-serif;}
+
+.acc_trigger.active a {color: #000; }
+
+.acc_trigger:hover { cursor: pointer; }
+.acc_container{ margin: 0; padding: 1em 0.4em; background-color: #fff; border-bottom: 1px solid #000; overflow:auto; font-size:14px; }
+
+
+.hr{ margin:0; color:#FFF; border-bottom: 1px solid #666; background-color: #FFF }
+
+
